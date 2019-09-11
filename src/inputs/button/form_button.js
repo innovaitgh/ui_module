@@ -2,7 +2,7 @@ import React from 'react';
 import Button from "./index.js";
 import FormControl from "../../form_control";
 import FormHelperText from "../../form_helper_text";
-import ProgressiveWrap from "../../feedback/progressive_wrap";
+import ProgressiveWrap from "../../progressive_wrap";
 
 export default function FormButton({ FormControlProps, isLoading, CircularProgressProps, value, ButtonProps, FormHelperTextProps, help}){
     return(
