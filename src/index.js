@@ -29,4 +29,6 @@ export {
           Toolbar,
           MainGridContainer,
           FloatingActionButton,
+          DateInput,
+          TimeInput
         };
