@@ -9,6 +9,13 @@ export default function MySelect({ FormControlProps, FormHelperTextProps, fieldN
     <FormControl { ...FormControlProps }>
       <Select { ...others }>
         {
+          typeof options === "object" ?
+            Object.keys(options).map(function(key, i){
+              return(
+                <option key={ i } value={ key }>{ options[key] }</option>
+              )
+            })
+          :
           options.map((option, i) => {
            if(typeof option === "object"){
              return(

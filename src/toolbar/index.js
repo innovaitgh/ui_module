@@ -46,7 +46,7 @@ const useToolbarStyles = makeStyles(theme => ({
     paddingRight: theme.spacing(1),
   },
   spacer: {
-    flex: '1 1 100%',
+    flexGrow: 1,
   },
   actions: {
     color: theme.palette.text.secondary,
