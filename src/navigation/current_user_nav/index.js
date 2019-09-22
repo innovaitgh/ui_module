@@ -10,7 +10,7 @@ const avatarStyles = makeStyles({
   }
 });
 
-function CurrentUserNav({ currentUser, external }){
+export default function CurrentUserNav({ currentUser, external }){
   const classes = avatarStyles();
   if(currentUser){
     const { name, avatar, url } = currentUser;
