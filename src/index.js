@@ -13,6 +13,9 @@ import FormHelperText from "./form_helper_text";
 import ProgressiveWrap from "./progressive_wrap";
 import Toolbar from "./toolbar";
 import MainGridContainer from "./main_grid_container";
+import Back from "./navigation/nav_bar_back";
+import CurrentUserNav from "./navigation/current_user_nav";
+import Go from "./navigation/go";
 
 
 export {
@@ -30,5 +33,8 @@ export {
           MainGridContainer,
           FloatingActionButton,
           DateInput,
-          TimeInput
+          TimeInput,
+          Back,
+          CurrentUserNav,
+          Go
         };
