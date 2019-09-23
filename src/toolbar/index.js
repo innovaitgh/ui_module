@@ -49,7 +49,6 @@ const useToolbarStyles = makeStyles(theme => ({
     flexGrow: 1,
   },
   actions: {
-    color: theme.palette.text.secondary,
     display: "flex",
   },
   title: {
