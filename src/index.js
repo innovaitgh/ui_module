@@ -16,6 +16,9 @@ import MainGridContainer from "./main_grid_container";
 import Back from "./navigation/nav_bar_back";
 import CurrentUserNav from "./navigation/current_user_nav";
 import Go from "./navigation/go";
+import TabsPanel from "./tabs/tabs_panel";
+import TabPanel from "./tabs/tab_panel";
+import Tabs from "./tabs";
 
 
 export {
@@ -36,5 +39,8 @@ export {
           TimeInput,
           Back,
           CurrentUserNav,
-          Go
+          Go,
+          Tabs,
+          TabPanel,
+          TabsPanel
         };
