@@ -2,40 +2,36 @@ import React from 'react';
 import { Typography, Toolbar } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
 
-export default function MyToolbar({ AppBarLeft, ToolBarProps, TitleProps, TypographyProps, title, SpacerProps, ActionProps, ToolBarActions }) {
+function DefaultSpacer(){
+  const classes = useToolbarStyles();
+  return(
+    <div className={ classes.spacer } />
+  )
+}
+
+export default function MyToolbar({ ToolbarLeft, ToolbarLeftProps, TitleProps, TypographyProps, title, Spacer, ToolbarRight, ToolbarRightProps }) {
   const classes = useToolbarStyles();
   return (
-    <Toolbar className = { classes.root } { ...ToolBarProps }>
-      {
-        AppBarLeft ?
-          AppBarLeft
-        : null
-      }
+    <Toolbar className = { classes.root } { ...ToolbarLeftProps }>
+      { ToolbarLeft }
       <div className = { classes.title } { ...TitleProps }>
         <Typography { ...TypographyProps }>
           { title }
         </Typography>
       </div>
-      <div className = { classes.spacer } { ...SpacerProps } />
-      <div className = { classes.actions } { ...ActionProps }>
-        {
-          ToolBarActions ?
-            ToolBarActions
-          : null
-        }
+      { Spacer }
+      <div className = { classes.actions } { ...ToolbarRightProps }>
+        { ToolbarRight }
       </div>
     </Toolbar>
   );
 };
 
-MyToolbar.defaultProps = () => {
-  return(
-    {
-      TypographyProps: {
-        variant: "h6"
-      }
-    }
-  )
+MyToolbar.defaultProps = {
+  TypographyProps: {
+    variant: "h6"
+  },
+  Spacer: <DefaultSpacer />
 }
 
 
