@@ -7,7 +7,9 @@ export default function MyTabs({ tabs, ...others }){
     <Tabs { ...others } >
       {
         tabs.map(function(tab, i){
-          <Tab key={ i } label={ tab } />
+          return(
+            <Tab key={ i } label={ tab } />
+          )
         })
       }
     </Tabs>
