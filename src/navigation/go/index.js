@@ -7,7 +7,7 @@ export default React.forwardRef((props, ref) => {
     <React.Fragment>
       {
         external ?
-        <a href={ to }>{ children }</a>
+        <a href={ to } { ...props }>{ children }</a>
         :
         <Link innerRef={ ref } { ...props } />
       }
