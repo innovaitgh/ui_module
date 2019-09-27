@@ -1,7 +1,6 @@
 import TextField from "./inputs/text_field";
 import Select from "./inputs/select";
 import Button from "./inputs/button";
-import ImageInput from "./inputs/image_input";
 import FormButton from "./inputs/button/form_button";
 import TimeInput from "./inputs/datetime/time.js";
 import DateInput from "./inputs/datetime/date.js";
@@ -25,7 +24,6 @@ export {
           TextField,
           Select,
           Button,
-          ImageInput,
           FormButton,
           CircularProgress,
           Dialog,
