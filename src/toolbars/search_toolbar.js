@@ -3,6 +3,7 @@ import Toolbar from "./index.js";
 import SearchBarField from "../inputs/search_bar_field";
 import IconButton from "@material-ui/core/IconButton";
 import SearchIcon from "@material-ui/icons/Search";
+import Back from "../navigation/nav_bar_back";
 
 function SearchToolbarRight({ ToolbarRight, onClick }){
   return(
