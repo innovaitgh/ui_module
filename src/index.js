@@ -12,6 +12,7 @@ import FormControl from "./form_control";
 import FormHelperText from "./form_helper_text";
 import ProgressiveWrap from "./progressive_wrap";
 import Toolbar from "./toolbar";
+import SearchToolbar from "./search_toolbar";
 import MainGridContainer from "./main_grid_container";
 import Back from "./navigation/nav_bar_back";
 import CurrentUserNav from "./navigation/current_user_nav";
@@ -42,5 +43,6 @@ export {
           Go,
           Tabs,
           TabPanel,
-          TabsPanel
+          TabsPanel,
+          SearchToolbar
         };
