@@ -4,10 +4,10 @@ import SearchBarField from "../inputs/search_bar_field";
 import IconButton from "@material-ui/core/IconButton";
 import SearchIcon from "@material-ui/icons/Search";
 
-function SearchToolbarRight({ ToolbarRight }){
+function SearchToolbarRight({ ToolbarRight, onClick }){
   return(
     <React.Fragment>
-      <IconButton>
+      <IconButton color={"inherit"} onClick={ onClick } data-pattern={ "search" } data-value={ "true" }>
         <SearchIcon />
       </IconButton>
       { ToolbarRight }
@@ -15,7 +15,7 @@ function SearchToolbarRight({ ToolbarRight }){
   )
 }
 
-export default function MyToolbar({ onClick, onChange, search , query, placeholder, ToolbarRight, ...others }) {
+export default function MyToolbar({ onClick, onChange, search , query, placeholder, ToolbarRight, children, ...others }) {
   return (
     <React.Fragment>
       {
@@ -39,7 +39,7 @@ export default function MyToolbar({ onClick, onChange, search , query, placehold
         <React.Fragment>
           <Toolbar
             { ...others }
-            ToolbarRight={ <SearchToolbarRight ToolbarRight={ ToolbarRight } /> }
+            ToolbarRight={ <SearchToolbarRight ToolbarRight={ ToolbarRight } onClick={ onClick } /> }
           />
           { children }
         </React.Fragment>
