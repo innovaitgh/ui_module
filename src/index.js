@@ -4,6 +4,7 @@ import Button from "./inputs/button";
 import FormButton from "./inputs/button/form_button";
 import TimeInput from "./inputs/datetime/time.js";
 import DateInput from "./inputs/datetime/date.js";
+import SearchBarField from "./inputs/search_bar_field";
 import FloatingActionButton from "./inputs/floating_action_button";
 import CircularProgress from "./feedback/circular_progress";
 import Dialog from "./feedback/dialog";
@@ -22,6 +23,7 @@ import Tabs from "./tabs";
 
 export {
           TextField,
+          SearchBarField,
           Select,
           Button,
           FormButton,
