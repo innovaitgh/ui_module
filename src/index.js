@@ -20,6 +20,7 @@ import Go from "./navigation/go";
 import TabsPanel from "./tabs/tabs_panel";
 import TabPanel from "./tabs/tab_panel";
 import Tabs from "./tabs";
+import Options from "./options";
 
 
 export {
@@ -44,5 +45,6 @@ export {
           Tabs,
           TabPanel,
           TabsPanel,
-          SearchToolbar
+          SearchToolbar,
+          Options
         };

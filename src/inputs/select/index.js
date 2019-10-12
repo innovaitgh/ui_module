@@ -35,7 +35,7 @@ export default function MySelect({ FormControlProps, FormHelperTextProps, fieldN
 
 MySelect.defaultProps = {
   native: true,
-  input: <OutlinedInput fullWidth />,
+  input: <OutlinedInput />,
   options: [],
   fieldName: "name",
   valueName: "value"
