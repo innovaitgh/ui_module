@@ -11,5 +11,6 @@ export default function MyFormControl({ children, ...others }){
 }
 
 MyFormControl.defaultProps = {
-  fullWidth: true
+  fullWidth: true,
+  margin: "normal"
 }
