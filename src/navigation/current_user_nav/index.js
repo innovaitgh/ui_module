@@ -14,11 +14,11 @@ export default function CurrentUserNav({ currentUser, external }){
   const classes = avatarStyles();
   if(currentUser){
     const { name, avatar, url } = currentUser;
-    const { thumb } = avatar;
+    const { thumb = {  } } = avatar;
     return(
       <React.Fragment>
         <IconButton component={ Go } to={ url } external={ external }>
-          <Avatar alt={ name } src={ thumb } className={ classes.avatar } />
+          <Avatar alt={ name } src={ thumb.url } className={ classes.avatar } />
         </IconButton>
       </React.Fragment>
     )
