@@ -3,8 +3,9 @@ import { IconButton } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
 import Go from "../go";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+import { withRouter } from "react-router-dom";
 
-export default function Back({ history, ...others }){
+function Back({ history, ...others }){
 
   function popHistory(){
     history.goBack();
@@ -16,3 +17,5 @@ export default function Back({ history, ...others }){
     </IconButton>
   )
 }
+
+export default withRouter(Back);
