@@ -17,7 +17,7 @@ export default function CurrentUserNav({ currentUser }){
     return(
       <React.Fragment>
         <IconButton component={ Go } to={ url } external={ true }>
-          <Avatar alt={ name } src={ avatar.url } className={ classes.avatar } />
+          <Avatar alt={ name } src={ `https://auth.innovaitgh.com${avatar.url}` } className={ classes.avatar } />
         </IconButton>
       </React.Fragment>
     )
