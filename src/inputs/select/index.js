@@ -3,10 +3,12 @@ import FormHelperText from '../../form_helper_text';
 import FormControl from '../../form_control';
 import Select from '@material-ui/core/Select';
 import OutlinedInput from "@material-ui/core/OutlinedInput";
+import InputLabel from "@material-ui/core/InputLabel";
 
-export default function MySelect({ FormControlProps, FormHelperTextProps, fieldName, valueName, options, help, ...others }){
+export default function MySelect({ FormControlProps, FormHelperTextProps, label, fieldName, valueName, options, help, ...others }){
   return(
     <FormControl { ...FormControlProps }>
+      <InputLabel>{ label }</InputLabel>
       <Select { ...others }>
         {
           typeof options === "object" ?
