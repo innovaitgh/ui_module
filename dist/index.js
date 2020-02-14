@@ -3,6 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.numberWithCommas = numberWithCommas;
 Object.defineProperty(exports, "TextField", {
   enumerable: true,
   get: function get() {
@@ -189,3 +190,7 @@ var _tabs = _interopRequireDefault(require("./tabs"));
 var _options = _interopRequireDefault(require("./options"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}

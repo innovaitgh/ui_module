@@ -22,6 +22,9 @@ import TabPanel from "./tabs/tab_panel";
 import Tabs from "./tabs";
 import Options from "./options";
 
+export function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
 export {
           TextField,
