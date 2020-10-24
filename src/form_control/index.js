@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormControl } from '@material-ui/core';
+import FormControl from '@material-ui/core/FormControl';
 
 
 export default function MyFormControl({ children, ...others }){

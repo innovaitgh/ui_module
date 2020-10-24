@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _text_field = _interopRequireDefault(require("../text_field"));
+var _TextField = _interopRequireDefault(require("@material-ui/core/TextField"));
 
 var _styles = require("@material-ui/core/styles");
 
@@ -25,6 +25,6 @@ var _default = (0, _styles.withStyles)({
       color: "white"
     }
   }
-})(_text_field["default"]);
+})(_TextField["default"]);
 
 exports["default"] = _default;

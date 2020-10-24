@@ -7,7 +7,7 @@ exports["default"] = MyFormHelperText;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _core = require("@material-ui/core");
+var _FormHelperText = _interopRequireDefault(require("@material-ui/core/FormHelperText"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -19,5 +19,5 @@ function MyFormHelperText(_ref) {
   var help = _ref.help,
       others = _objectWithoutProperties(_ref, ["help"]);
 
-  return _react["default"].createElement(_react["default"].Fragment, null, help ? _react["default"].createElement(_core.FormHelperText, others, help) : null);
+  return _react["default"].createElement(_react["default"].Fragment, null, help ? _react["default"].createElement(_FormHelperText["default"], others, help) : null);
 }

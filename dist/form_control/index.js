@@ -7,7 +7,7 @@ exports["default"] = MyFormControl;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _core = require("@material-ui/core");
+var _FormControl = _interopRequireDefault(require("@material-ui/core/FormControl"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -19,7 +19,7 @@ function MyFormControl(_ref) {
   var children = _ref.children,
       others = _objectWithoutProperties(_ref, ["children"]);
 
-  return _react["default"].createElement(_core.FormControl, others, children);
+  return _react["default"].createElement(_FormControl["default"], others, children);
 }
 
 MyFormControl.defaultProps = {

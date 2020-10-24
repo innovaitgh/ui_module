@@ -7,7 +7,9 @@ exports["default"] = MyToolbar;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _core = require("@material-ui/core");
+var _Typography = _interopRequireDefault(require("@material-ui/core/Typography"));
+
+var _Toolbar = _interopRequireDefault(require("@material-ui/core/Toolbar"));
 
 var _styles = require("@material-ui/core/styles");
 
@@ -32,11 +34,11 @@ function MyToolbar(_ref) {
       ToolbarRight = _ref.ToolbarRight,
       ToolbarRightProps = _ref.ToolbarRightProps;
   var classes = useToolbarStyles();
-  return _react["default"].createElement(_core.Toolbar, _extends({
+  return _react["default"].createElement(_Toolbar["default"], _extends({
     className: classes.root
   }, ToolbarLeftProps), ToolbarLeft, _react["default"].createElement("div", _extends({
     className: classes.title
-  }, TitleProps), _react["default"].createElement(_core.Typography, TypographyProps, title)), Spacer, _react["default"].createElement("div", _extends({
+  }, TitleProps), _react["default"].createElement(_Typography["default"], TypographyProps, title)), Spacer, _react["default"].createElement("div", _extends({
     className: classes.actions
   }, ToolbarRightProps), ToolbarRight));
 }

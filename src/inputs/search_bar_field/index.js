@@ -1,5 +1,5 @@
 import React from "react";
-import TextField from "../text_field";
+import TextField from "@material-ui/core/TextField";
 import { withStyles } from '@material-ui/core/styles';
 
 export default withStyles({

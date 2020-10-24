@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _core = require("@material-ui/core");
+var _IconButton = _interopRequireDefault(require("@material-ui/core/IconButton"));
 
 var _styles = require("@material-ui/core/styles");
 
@@ -33,7 +33,7 @@ function Back(_ref) {
     history.goBack();
   }
 
-  return _react["default"].createElement(_core.IconButton, _extends({
+  return _react["default"].createElement(_IconButton["default"], _extends({
     onClick: popHistory,
     color: "inherit"
   }, others), _react["default"].createElement(_ArrowBack["default"], null));

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormHelperText } from '@material-ui/core';
+import FormHelperText from '@material-ui/core/FormHelperText';
 
 export default function MyFormHelperText({ help, ...others }){
   return(
