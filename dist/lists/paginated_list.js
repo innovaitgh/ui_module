@@ -16,9 +16,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 var _default = function _default(props) {
   var state = props.state,
       changePage = props.changePage,
-      changePerPage = props.changePerPage;
-  var listParams = state.listParams,
-      length = state.total_entries;
+      changePerPage = props.changePerPage,
+      listParams = props.listParams;
+  var length = state.total_entries;
   var per_page = listParams.per_page,
       page = listParams.page;
   var paginationPage = page - 1;
