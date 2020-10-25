@@ -23,7 +23,12 @@ var MyList = function MyList(props) {
       actions = _props$actions === void 0 ? [] : _props$actions,
       RenderItem = props.RenderItem,
       state = props.state,
-      activity = props.activity;
+      activity = props.activity,
+      _props$ConfirmDialogP = props.ConfirmDialogProps,
+      ConfirmDialogProps = _props$ConfirmDialogP === void 0 ? {
+    title: "Delete Item",
+    message: "Are you sure you want to delete this item?"
+  } : _props$ConfirmDialogP;
   if (!state) return null;
   var data = state.data;
   return _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(_core.Toolbar, {
@@ -44,7 +49,8 @@ var MyList = function MyList(props) {
     }, props, {
       index: i
     }, {
-      item: item
+      item: item,
+      ConfirmDialogProps: ConfirmDialogProps
     }, {
       withAsyncActionMethod: "delete"
     }));
