@@ -16,18 +16,6 @@ Object.defineProperty(exports, "SearchBarField", {
     return _search_bar_field["default"];
   }
 });
-Object.defineProperty(exports, "FormControl", {
-  enumerable: true,
-  get: function get() {
-    return _form_control["default"];
-  }
-});
-Object.defineProperty(exports, "FormHelperText", {
-  enumerable: true,
-  get: function get() {
-    return _form_helper_text["default"];
-  }
-});
 Object.defineProperty(exports, "Toolbar", {
   enumerable: true,
   get: function get() {
@@ -98,10 +86,6 @@ Object.defineProperty(exports, "List", {
 var _select = _interopRequireDefault(require("./inputs/select"));
 
 var _search_bar_field = _interopRequireDefault(require("./inputs/search_bar_field"));
-
-var _form_control = _interopRequireDefault(require("./form_control"));
-
-var _form_helper_text = _interopRequireDefault(require("./form_helper_text"));
 
 var _toolbars = _interopRequireDefault(require("./toolbars"));
 

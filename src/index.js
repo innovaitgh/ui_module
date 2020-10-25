@@ -1,9 +1,6 @@
 import Select from "./inputs/select";
 import SearchBarField from "./inputs/search_bar_field";
 
-import FormControl from "./form_control";
-import FormHelperText from "./form_helper_text";
-
 import Toolbar from "./toolbars";
 import SearchToolbar from "./toolbars/search_toolbar";
 
@@ -26,8 +23,6 @@ export function numberWithCommas(x) {
 export {
   Select,
   SearchBarField,
-  FormControl,
-  FormHelperText,
   Toolbar,
   SearchToolbar,
   Back,
