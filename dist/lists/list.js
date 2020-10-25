@@ -15,6 +15,20 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
+var Item = function Item(props) {
+  var RenderItem = props.RenderItem,
+      item = props.item,
+      destroyItem = props.destroyItem;
+
+  var onDelete = function onDelete() {
+    return destroyItem(item);
+  };
+
+  return _react["default"].createElement(RenderItem, _extends({}, props, {
+    onDelete: onDelete
+  }));
+};
+
 var MyList = function MyList(props) {
   var title = props.title,
       _props$actions = props.actions,
@@ -37,7 +51,7 @@ var MyList = function MyList(props) {
       onClick: onClick
     }), name);
   }))), activity ? _react["default"].createElement(_activity["default"], null) : _react["default"].createElement(_core.List, null, data.map(function (item, i) {
-    return _react["default"].createElement(RenderItem, _extends({
+    return _react["default"].createElement(Item, _extends({
       key: i
     }, props, {
       index: i
