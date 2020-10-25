@@ -9,7 +9,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _core = require("@material-ui/core");
 
-var _main = _interopRequireDefault(require("./main"));
+var _list = _interopRequireDefault(require("./list"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -35,7 +35,7 @@ var _default = function _default(props) {
 
   return _react["default"].createElement(_core.Paper, {
     className: "grid"
-  }, _react["default"].createElement(_main["default"], props), _react["default"].createElement(RenderEmptyRows, null), _react["default"].createElement(_core.TablePagination, {
+  }, _react["default"].createElement(_list["default"], props), _react["default"].createElement(RenderEmptyRows, null), _react["default"].createElement(_core.TablePagination, {
     rowsPerPageOptions: [5, 10, 25, 30],
     component: "div",
     count: length,
