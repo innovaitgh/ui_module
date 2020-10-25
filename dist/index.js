@@ -119,7 +119,7 @@ var _tab_panel = _interopRequireDefault(require("./tabs/tab_panel"));
 
 var _tabs = _interopRequireDefault(require("./tabs"));
 
-var _activity = _interopRequireDefault(require("activity"));
+var _activity = _interopRequireDefault(require("./activity"));
 
 var _lists = require("./lists");
 
