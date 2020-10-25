@@ -46,7 +46,7 @@ var MyList = function MyList(props) {
     }, {
       item: item
     }, {
-      method: "delete"
+      withAsyncActionMethod: "delete"
     }));
   })));
 };
