@@ -9,7 +9,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _core = require("@material-ui/core");
 
-var _activity = require("../activity");
+var _activity = _interopRequireDefault(require("../activity"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -36,7 +36,7 @@ var MyList = function MyList(props) {
     }, {
       onClick: onClick
     }), name);
-  }))), activity ? _react["default"].createElement(_activity.Activity, null) : _react["default"].createElement(_core.List, null, data.map(function (item, i) {
+  }))), activity ? _react["default"].createElement(_activity["default"], null) : _react["default"].createElement(_core.List, null, data.map(function (item, i) {
     return _react["default"].createElement(RenderItem, _extends({
       key: i
     }, props, {
