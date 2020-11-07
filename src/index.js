@@ -21,7 +21,7 @@ export function numberWithCommas(x) {
 };
 
 
-export const MidOptions = ({string}) => <p>{string.join(' \u00B7 ')}</p>;
+export const joinWithMid = (string) => string.join(' \u00B7 ');
 
 export {
   Select,

@@ -82,7 +82,7 @@ Object.defineProperty(exports, "List", {
     return _lists.List;
   }
 });
-exports.MidOptions = void 0;
+exports.joinWithMid = void 0;
 
 var _select = _interopRequireDefault(require("./inputs/select"));
 
@@ -116,9 +116,8 @@ function numberWithCommas(x) {
 
 ;
 
-var MidOptions = function MidOptions(_ref) {
-  var string = _ref.string;
-  return React.createElement("p", null, string.join(" \xB7 "));
+var joinWithMid = function joinWithMid(string) {
+  return string.join(" \xB7 ");
 };
 
-exports.MidOptions = MidOptions;
+exports.joinWithMid = joinWithMid;
