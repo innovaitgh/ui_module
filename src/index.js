@@ -18,7 +18,10 @@ import {PaginatedList, List} from "./lists";
 
 export function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
+};
+
+
+export const MidOptions = ({string}) => <p>{string.join(' \u00B7 ')}</p>;
 
 export {
   Select,

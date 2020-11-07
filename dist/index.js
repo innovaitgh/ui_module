@@ -82,6 +82,7 @@ Object.defineProperty(exports, "List", {
     return _lists.List;
   }
 });
+exports.MidOptions = void 0;
 
 var _select = _interopRequireDefault(require("./inputs/select"));
 
@@ -112,3 +113,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
+
+;
+
+var MidOptions = function MidOptions(_ref) {
+  var string = _ref.string;
+  return React.createElement("p", null, string.join(" \xB7 "));
+};
+
+exports.MidOptions = MidOptions;
