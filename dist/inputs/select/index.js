@@ -21,18 +21,12 @@ function MySelect(_ref) {
   var FormControlProps = _ref.FormControlProps,
       FormHelperTextProps = _ref.FormHelperTextProps,
       label = _ref.label,
-      options = _ref.options,
       help = _ref.help,
-      others = _objectWithoutProperties(_ref, ["FormControlProps", "FormHelperTextProps", "label", "options", "help"]);
+      others = _objectWithoutProperties(_ref, ["FormControlProps", "FormHelperTextProps", "label", "help"]);
 
   return _react["default"].createElement(_core.FormControl, _extends({}, FormControlProps, {
     margin: "normal"
-  }), _react["default"].createElement(_core.InputLabel, null, label), _react["default"].createElement(_core.Select, others, options.map(function (option, i) {
-    return _react["default"].createElement("option", {
-      key: i,
-      value: i
-    }, option);
-  })), _react["default"].createElement(_core.FormHelperText, FormHelperTextProps, help));
+  }), _react["default"].createElement(_core.InputLabel, null, label), _react["default"].createElement(_core.Select, others, children), _react["default"].createElement(_core.FormHelperText, FormHelperTextProps, help));
 }
 
 MySelect.defaultProps = {
