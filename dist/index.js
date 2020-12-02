@@ -22,12 +22,6 @@ Object.defineProperty(exports, "Toolbar", {
     return _toolbars["default"];
   }
 });
-Object.defineProperty(exports, "SearchToolbar", {
-  enumerable: true,
-  get: function get() {
-    return _search_toolbar["default"];
-  }
-});
 Object.defineProperty(exports, "TabsPanel", {
   enumerable: true,
   get: function get() {
@@ -71,8 +65,6 @@ var _select = _interopRequireDefault(require("./inputs/select"));
 var _search_bar_field = _interopRequireDefault(require("./inputs/search_bar_field"));
 
 var _toolbars = _interopRequireDefault(require("./toolbars"));
-
-var _search_toolbar = _interopRequireDefault(require("./toolbars/search_toolbar"));
 
 var _tabs_panel = _interopRequireDefault(require("./tabs/tabs_panel"));
 

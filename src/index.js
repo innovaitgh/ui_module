@@ -2,7 +2,6 @@ import Select from "./inputs/select";
 import SearchBarField from "./inputs/search_bar_field";
 
 import Toolbar from "./toolbars";
-import SearchToolbar from "./toolbars/search_toolbar";
 
 import TabsPanel from "./tabs/tabs_panel";
 import TabPanel from "./tabs/tab_panel";
@@ -23,7 +22,6 @@ export {
   Select,
   SearchBarField,
   Toolbar,
-  SearchToolbar,
   Tabs,
   TabPanel,
   TabsPanel,
