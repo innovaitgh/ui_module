@@ -20,14 +20,15 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 function MySelect(_ref) {
   var FormControlProps = _ref.FormControlProps,
       FormHelperTextProps = _ref.FormHelperTextProps,
+      InputLabelProps = _ref.InputLabelProps,
       children = _ref.children,
       label = _ref.label,
       help = _ref.help,
-      others = _objectWithoutProperties(_ref, ["FormControlProps", "FormHelperTextProps", "children", "label", "help"]);
+      others = _objectWithoutProperties(_ref, ["FormControlProps", "FormHelperTextProps", "InputLabelProps", "children", "label", "help"]);
 
   return _react["default"].createElement(_core.FormControl, _extends({}, FormControlProps, {
     margin: "normal"
-  }), _react["default"].createElement(_core.InputLabel, null, label), _react["default"].createElement(_core.Select, others, children), _react["default"].createElement(_core.FormHelperText, FormHelperTextProps, help));
+  }), _react["default"].createElement(_core.InputLabel, InputLabelProps, label), _react["default"].createElement(_core.Select, others, children), _react["default"].createElement(_core.FormHelperText, FormHelperTextProps, help));
 }
 
 ;
